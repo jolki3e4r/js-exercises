@@ -1,7 +1,7 @@
 function triple(number) {
-  // complete function here
+  return number * 3;
 }
-
-var result = triple(12);
+// solucion al ejercicio que retorne tres veces el valor ingresado
+var result = triple(25);
 
 console.log(result);
