@@ -6,7 +6,9 @@
   Write a function that transforms numbers into the format £0.00
 */
 
-function formatCurrency() {}
+function formatCurrency(price) {
+  return "£" + price.toFixed(2);
+}
 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
@@ -16,7 +18,7 @@ function calculateSalesTax(price) {
 }
 
 var product = "The life and times of Mozafar Haider";
-var price = 12.5;
+var price = 12.525;
 var salesTax = calculateSalesTax(price);
 
 console.log("Product: " + product);

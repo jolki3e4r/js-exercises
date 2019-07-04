@@ -9,8 +9,19 @@
 
   As a learning exercise (you wouldn't do this normally), do all of the above in 1 line of code 
 */
+/*
+Funciones de canalización
+  ================
+Usando las funciones proporcionadas:
+- multiplica`startingValue` por 2
+  - añadir 10
+    - formato
+    - Asignar a la variable`resultado`
 
-var startingValue = 5;
+Como ejercicio de aprendizaje(no lo haría normalmente), haga todo lo anterior en 1 línea de código
+  */
+
+var startingValue = 2;
 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */

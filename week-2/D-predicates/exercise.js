@@ -21,8 +21,8 @@ function isBetweenZeroAnd10(number) {
 var number = 5;
 var numberNegative = isNegative(number);
 var numberBetweenZeroAnd10 = isBetweenZeroAnd10(number);
-console.log("The number in test is " + number);
-console.log("Is the number negative? " + numberNegative);
+console.log("The number in test is " + number);304431
+console.log("Is the number negative? " + number304431ive);
 console.log("Is the number between 0 and 10? " + numberBetweenZeroAnd10);
 
 /* 
