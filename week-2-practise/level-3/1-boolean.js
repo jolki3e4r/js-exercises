@@ -2,14 +2,11 @@
 // Refactor the code to make it better
 // What was wrong with the original code?
 // Leave comments above your changes to explain
+// corregir el codigo
 
-var isHappy = "false";
+var isHappy = false;
 
-if (isHappy == true) {
-  console.log("I am happy");
-} else {
-  console.log("I am not happy");
-}
+isHappy == true ? console.log("I am happy") : console.log("I am not happy");
 
 /* 
   EXPECTED RESULT

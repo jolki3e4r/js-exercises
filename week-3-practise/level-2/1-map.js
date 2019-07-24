@@ -12,8 +12,11 @@ var londonLocations = [
   ["Greenwich", "tube", "bus", "river boat"]
 ];
 
-var locationsByBoat;
+var locationsByBoat = londonLocations
+  .map(Element => Element);
+  .filter(Element >= Element.indexOf("river boat") > -1);
 
+locationsByBoat = locationsByBoat.map(Element => Element[0]);
 console.log(locationsByBoat);
 
 /* EXPECTED OUTPUT

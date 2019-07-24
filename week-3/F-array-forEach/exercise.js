@@ -8,6 +8,21 @@
 */
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+arr.forEach(function(element) {
+  // console.log('element ', index, element);
+  // console.log('arr[element] ', arr[element]);
+  // console.log('arr[index] ', arr[index]);
+
+  if (element % 3 === 0 && element % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (element % 3 === 0) {
+    console.log("Fizz");
+  } else if (element % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(element);
+  }
+});
 
 /* EXPECTED OUTPUT */
 

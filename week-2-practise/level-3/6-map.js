@@ -11,11 +11,12 @@ function tidyUpString(str) {
 }
 
 function captialise(str) {
+  str = tidyUpString(str).slic;
   // complete this function
 }
 
 var mentors = ["/Daniel ", "irina ", " Gordon", "ashleigh "];
-var mentorsTidyAndCapitalised;
+var mentorsTidyAndCapitalised = captialise();
 
 console.log(mentorsTidyAndCapitalised);
 

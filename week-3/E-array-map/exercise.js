@@ -3,3 +3,22 @@
 
 var numbers = [0.1, 0.2, 0.3, 0.4, 0.5];
 
+// function multiple100(number) {
+//     return number * 100;
+// }
+// let numbersMultiple100 = numbers.map(multiple100);
+
+// let numbersMultiple100 = numbers.map(function multiple100(number) {
+//     return number * 100;
+// })
+
+// let numbersMultiple100 = numbers.map(function(number) {
+//     return number * 100;
+// })
+
+// let numbersMultiple100 = numbers.map(number => {
+//     return number * 100;
+// })
+
+let numbersMultiple100 = numbers.map(number => number * 100);
+console.log(numbersMultiple100);
