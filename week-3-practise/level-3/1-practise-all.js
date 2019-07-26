@@ -45,4 +45,22 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 var password = ["Se%5", "TktE.TJTU", "384HsHF", "dvyyeyY!5", "tryT3729."];
 
-console.log(PasswordValidationResult)
+//resolvemos el ejercicio con una exprecion regular se crea una variable
+//y se encerra entre slashes y corchetes y colocamos el rango en cual se quiere buscar///explorar
+let exRegular1 = /[0-9]/;
+let exRegular2 = /[a-z]/;
+let exRegular3 = /[A-Z]/;
+let exRegular4 = /[!, #, $, %,.]/;
+
+// creamos la funcion y recorremos el array con un map y comparamos los items
+//con de cada array con las varables
+
+PasswordValidationResult = password.map(
+  item =>
+    exRegular1.test(item) &&
+    exRegular2.test(item) &&
+    exRegular3.test(item) &&
+    item.length > 5 &&
+    exRegular4.test(item)
+);
+console.log(PasswordValidationResult);
