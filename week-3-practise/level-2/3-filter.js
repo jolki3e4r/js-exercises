@@ -25,7 +25,9 @@ var voyagers = [
   "Archer family"
 ];
 
-var colonisers; // Complete this statement
+var colonisers = voyagers.filter(
+  family => family.includes("family") && family[0] === "A"
+);
 
 console.log(colonisers);
 

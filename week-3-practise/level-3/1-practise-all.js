@@ -55,7 +55,16 @@ let exRegular4 = /[!, #, $, %,.]/;
 // creamos la funcion y recorremos el array con un map y comparamos los items
 //con de cada array con las varables
 
-PasswordValidationResult = password.map(
+PasswordValidationResult1 = password.map(
+  item =>
+    exRegular1.test(item) &&
+    exRegular2.test(item) &&
+    exRegular3.test(item) &&
+    item.length > 5
+);
+console.log(PasswordValidationResult1);
+
+PasswordValidationResult2 = password.map(
   item =>
     exRegular1.test(item) &&
     exRegular2.test(item) &&
@@ -63,4 +72,24 @@ PasswordValidationResult = password.map(
     item.length > 5 &&
     exRegular4.test(item)
 );
-console.log(PasswordValidationResult);
+console.log(PasswordValidationResult2);
+
+PreviousPassword = [
+  "fhD8!yrjj",
+  "ttkTu.wer3",
+  "dvyyeyY!5",
+  "qwbfj76%",
+  "tytT3729."
+];
+
+PasswordValidationResult3 = password.map(
+  item =>
+    exRegular1.test(item) &&
+    exRegular2.test(item) &&
+    exRegular3.test(item) &&
+    item.length > 5 &&
+    exRegular4.test(item) &&
+    !PreviousPassword.includes(item)
+);
+
+console.log(PasswordValidationResult3);
