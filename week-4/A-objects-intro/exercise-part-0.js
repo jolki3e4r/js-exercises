@@ -11,7 +11,7 @@ let computador = {
   Memory: "16GB DDR3L",
   Processor: "AMD R5 Series",
   Storage: "1TB HDD",
-  Operating System: "Windows 10/ Linux Manjaro"
+  Operating System: "Windows 10/ Linux Manjaro",
   audio: "Integrated stereo speakers with Dolby® Advanced Audio™"
 
 };
