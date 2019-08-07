@@ -18,6 +18,7 @@ function isBetweenZeroAnd10(number) {
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
+
 var number = 5;
 var numberNegative = isNegative(number);
 var numberBetweenZeroAnd10 = isBetweenZeroAnd10(number);
