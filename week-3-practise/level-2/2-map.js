@@ -11,8 +11,7 @@ var attendances = [
   ["Elamin", 6],
   ["Adam", 5],
   ["Tayoa", 11],
-  ["Nina", 10],
-  ["Jose", 9]
+  ["Nina", 10]
 ];
 
 var eligibleStudentNames = attendances

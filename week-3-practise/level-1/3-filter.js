@@ -547,7 +547,17 @@ var streetNames = [
   "Lane pinal"
 ];
 
-var laneNames = streetNames.filter(street => street.includes("lane")); // Complete this line
+//var laneNames = streetNames.filter(street => street.includes("lane")); // Complete this line
+function lane(element) {
+  if (element.indexOf("Lane") > -1) {
+    return true;
+  }
+}
+
+var laneNames = streetNames.filter(lane); // Complete this line
+
+console.log(laneNames);
+console.log(laneNames.length);
 
 console.log(laneNames);
 console.log(laneNames.length);

@@ -7,12 +7,26 @@
   Determine if the bush has ALL PINK berries and is safe for the astronauts to eat from the bush.
   Hint included at end of file.
 */
-
 var bush1BerryColours = ["pink", "pink", "pink", "neon", "pink", "transparent"];
 var bush2BerryColours = ["pink", "pink", "pink", "pink"];
 
-var bush1SafeToEat = bush1BerryColours.every(color => color === "pink"); //Complete this statement
-var bush2SafeToEat = bush2BerryColours.every(color => color === "pink");
+// function colorRosa(element) {
+//     return element === "pink";
+// }
+// var bush1SafeToEat = bush1BerryColours.every(colorRosa); //Complete this statement
+
+// function colorRosa1(element) {
+//     return element === "pink";
+// }
+// var bush2SafeToEat = bush2BerryColours.every(colorRosa1);
+
+var bush1SafeToEat = bush1BerryColours.every(element => {
+  return element === "pink";
+});
+
+var bush2SafeToEat = bush2BerryColours.every(element => {
+  return element === "pink";
+}); //Complete this statement
 
 if (bush1SafeToEat) {
   console.log("Bush 1 is safe to eat from");

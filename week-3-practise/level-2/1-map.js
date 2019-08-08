@@ -13,11 +13,12 @@ var londonLocations = [
 ];
 
 var locationsByBoat = londonLocations
-  .filter(element => element.includes("river boat"))
-  .map(element => element[0]);
+  .map(Element => Element)
+  .filter(Element => Element.indexOf("river boat") > -1);
+
+locationsByBoat = locationsByBoat.map(Element => Element[0]);
 
 console.log(locationsByBoat);
-
 /* EXPECTED OUTPUT
 ["London bridge", "Greenwich"]
 */
